@@ -38,10 +38,10 @@ $config = [
             'useFileTransport' => false,
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
-                'host' => 'smtp.yandex.ru',
-                'username' => 'zheniayakymchuck@yandex.ua',
-                'password' => 'Noobsaibot2',
-                'port' => '465',
+                'host' => 'smtp.ukr.net',
+                'username' => 'bayard7523@ukr.net',
+                'password' => 'bLt-cV9-cEh-znA',
+                'port' => '2525',
                 'encryption' => 'ssl',
             ]
         ],

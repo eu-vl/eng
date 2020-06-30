@@ -1,4 +1,5 @@
 
+
 <section class="about-us">
     <div class="about-us-title mainTitle">
         <span>About us</span>
@@ -12,7 +13,6 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit consequatur molestiae facere non nihil. Nihil, possimus laborumbundleRenderer.
                 Corporis similique est provident ea eveniet, hic unde quo eaque eum, animi placeat. Lorem ipsum dolor sit amet!</p>
         </div>
-    </div>
     </div>
     <!-- About us end -->
     <!-- Our team start -->

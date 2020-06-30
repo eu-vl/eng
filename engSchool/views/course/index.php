@@ -1,3 +1,6 @@
+<?php
+$this->title = 'Courses';
+?>
 
     <section>
     <div class="row">

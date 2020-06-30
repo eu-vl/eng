@@ -214,3 +214,7 @@ nav{
     display:flex;
     flex-direction: column;
 }
+.contact-form{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

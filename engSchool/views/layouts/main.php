@@ -5,10 +5,7 @@
 
 use app\widgets\Alert;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\helpers\Url;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 
@@ -21,6 +18,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -38,7 +36,7 @@ AppAsset::register($this);
                     <li><a href="<?= Url::to(['home/index'])?>">Home</a></li>
                     <li><a href="<?= Url::to(['teacher/index'])?>">Teachers</a></li>
                     <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
-                    <li><a href="Contact.html">Contacts</a></li>
+                    <li><a href="<?= Url::to(['contact/index']) ?>">Contact</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign up</a></li>
                 </ul>
@@ -47,17 +45,10 @@ AppAsset::register($this);
 
     </div>
     <ul id="mobile" class="sidenav">
-<<<<<<< HEAD
         <li><a href="<?= Url::to('home/index') ?>">Home</a></li>
-        <li><a href=""><?= Url::to('teacher/index') ?></a></li>
+        <li><a href="<?= Url::to('teacher/index') ?>">Teachers</a></li>
         <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
-        <li><a href="<?= Url::to('contact/index') ?>">Contacts</a></li>
-=======
-        <li><a href="<?= Url::to(['home/index'])?>">Home</a></li>
-        <li><a href="<?= Url::to(['teacher/index'])?>">Teachers</a></li>
-        <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
-        <li><a href="Contacts.html">Contacts</a></li>
->>>>>>> 1bdd7ed2996860a1af1c19270be47296ef945be2
+        <li><a href="<?= Url::to('contact/index') ?>">Contact</a></li>
         <li><a href="#">Login</a></li>
         <li><a href="#">Sign up</a></li>
     </ul>
@@ -67,9 +58,9 @@ AppAsset::register($this);
 <!--Footer start-->
 <footer class="z-depth-2">
     <div class="footer-menu">
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
-        <a href="#">Email</a>
+        <a href="<?= Url::to('home/index') ?>">About us</a>
+        <a href="<?= Url::to('contact/index') ?>">Contact</a>
+        <a href="<?= Url::to('contact/index') ?>">Email</a>
         <div class="copyright">
             <p>© Ugandosiki 2020</p>
         </div>
