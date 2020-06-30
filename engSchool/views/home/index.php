@@ -21,43 +21,48 @@
             <span>Our team</span>
         </div>
         <div class="row our-team-content">
+            <?php foreach ($eugene as $eug): ?>
             <div class="col s12 m4 l4 hoverable our-team-cards">
                 <div class="our-team-img">
-                    <img class="responsive-img" src="img/our_team_img.png"  alt="">
+                    <img class="responsive-img" src="<?= $eug->img ?>"  alt="">
                     <div class="our-team-btn">
                         <a class="btn-floating btn-med waves-effect waves-light cyan pulse" title="Go to Profile"><i class="material-icons">account_circle</i></a>
                     </div>
                 </div>
                 <div class="our-team-desc">
-                    <p class="flow-text">Eugene Yakymchuk</p>
-                    <p class="flow-text">Degree: NAU CyberSecurity</p>
+                    <p class="flow-text"><?= $eug->name ?></p>
+                    <p class="flow-text">Degree: <?= $eug->degree ?></p>
                 </div>
             </div>
+            <?php endforeach; ?>
+            <?php foreach ($vlad as $vld): ?>
             <div class="col s12 m4 l4 hoverable our-team-cards">
                 <div class="our-team-img">
-                    <img class="responsive-img" src="img/our_team_img.png"  alt="">
+                    <img class="responsive-img" src="<?= $vld->img ?>"  alt="">
                     <div class="our-team-btn">
                         <a class="btn-floating btn-med waves-effect waves-light cyan pulse" title="Go to Profile"><i class="material-icons">account_circle</i></a>
                     </div>
                 </div>
                 <div class="our-team-desc">
-                    <p class="flow-text">Eugene Yakymchuk</p>
-                    <p class="flow-text">Degree: NAU CyberSecurity</p>
-
+                    <p class="flow-text"><?= $vld->name ?></p>
+                    <p class="flow-text">Degree: <?= $vld->degree ?></p>
                 </div>
             </div>
+            <?php endforeach; ?>
+            <?php foreach ($andrew as $andr): ?>
             <div class="col s12 m4 l4 hoverable our-team-cards">
                 <div class="our-team-img">
-                    <img class="responsive-img" src="img/our_team_img.png"  alt="">
+                    <img class="responsive-img" src="<?= $andr->img ?>"  alt="">
                     <div class="our-team-btn">
                         <a class="btn-floating btn-med waves-effect waves-light cyan pulse" title="Go to Profile"><i class="material-icons">account_circle</i></a>
                     </div>
                 </div>
                 <div class="our-team-desc">
-                    <p class="flow-text">Eugene Yakymchuk</p>
-                    <p class="flow-text">Degree: NAU CyberSecurity</p>
+                    <p class="flow-text"><?= $andr->name ?></p>
+                    <p class="flow-text">Degree: <?= $andr->degree ?></p>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
 </section>
 <section class="courses">
