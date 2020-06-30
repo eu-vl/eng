@@ -7,8 +7,10 @@ use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+
 
 AppAsset::register($this);
 ?>
@@ -37,8 +39,8 @@ AppAsset::register($this);
                 <a href="#!" class="brand-logo" id="main-title">Ugandochka</a>
                 <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Teachers.html">Teachers</a></li>
+                    <li><a href="<?= Url::toRoute('home/index')?>">Home</a></li>
+                    <li><a href="<?= Url::toRoute('teacher/index')?>">Teachers</a></li>
                     <li><a href="Courses.html">Courses</a></li>
                     <li><a href="Contact.html">Contacts</a></li>
                     <li><a href="#">Login</a></li>
@@ -49,8 +51,8 @@ AppAsset::register($this);
 
     </div>
     <ul id="mobile" class="sidenav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Teachers.html">Teachers</a></li>
+        <li><a href="<?= Url::toRoute('home/index')?>">Home</a></li>
+        <li><a href="<?= Url::toRoute('teacher/index')?>">Teachers</a></li>
         <li><a href="Courses.html">Courses</a></li>
         <li><a href="Contacts.html">Contacts</a></li>
         <li><a href="#">Login</a></li>
