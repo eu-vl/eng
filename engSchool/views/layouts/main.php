@@ -51,10 +51,10 @@ AppAsset::register($this);
 
     </div>
     <ul id="mobile" class="sidenav">
-        <li><a href="<?= Url::toRoute('home/index')?>">Home</a></li>
-        <li><a href="<?= Url::toRoute('teacher/index')?>">Teachers</a></li>
+        <li><a href="<?= Url::to('home/index') ?>">Home</a></li>
+        <li><a href=""><?= Url::to('teacher/index') ?></a></li>
         <li><a href="Courses.html">Courses</a></li>
-        <li><a href="Contacts.html">Contacts</a></li>
+        <li><a href="<?= Url::to('contact/index') ?>">Contacts</a></li>
         <li><a href="#">Login</a></li>
         <li><a href="#">Sign up</a></li>
     </ul>

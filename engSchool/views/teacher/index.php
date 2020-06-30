@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col s12 m4 l4">
             <div class="teacher-info">
-                <img class="responsive-img" src="<?= $teach->img ?>" alt="">
+                <img class="responsive-img" src="<?=$teach->img ?>" alt="">
                 <h4 class="teacher-name"><?= $teach->name ?></h4>
             </div>
         </div>
