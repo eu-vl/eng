@@ -21,10 +21,6 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/styles.css">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -39,9 +35,9 @@ AppAsset::register($this);
                 <a href="#!" class="brand-logo" id="main-title">Ugandochka</a>
                 <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down navMenu">
-                    <li><a href="<?= Url::toRoute('home/index')?>">Home</a></li>
-                    <li><a href="<?= Url::toRoute('teacher/index')?>">Teachers</a></li>
-                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="<?= Url::to(['home/index'])?>">Home</a></li>
+                    <li><a href="<?= Url::to(['teacher/index'])?>">Teachers</a></li>
+                    <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
                     <li><a href="Contact.html">Contacts</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign up</a></li>
@@ -51,10 +47,17 @@ AppAsset::register($this);
 
     </div>
     <ul id="mobile" class="sidenav">
+<<<<<<< HEAD
         <li><a href="<?= Url::to('home/index') ?>">Home</a></li>
         <li><a href=""><?= Url::to('teacher/index') ?></a></li>
-        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
         <li><a href="<?= Url::to('contact/index') ?>">Contacts</a></li>
+=======
+        <li><a href="<?= Url::to(['home/index'])?>">Home</a></li>
+        <li><a href="<?= Url::to(['teacher/index'])?>">Teachers</a></li>
+        <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+>>>>>>> 1bdd7ed2996860a1af1c19270be47296ef945be2
         <li><a href="#">Login</a></li>
         <li><a href="#">Sign up</a></li>
     </ul>

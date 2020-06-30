@@ -22,7 +22,9 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/materialize.css',
-        'css/styles.css'
+        'css/styles.css',
+        'https://fonts.googleapis.com/icon?family=Material+Icons',
+        'https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap',
     ];
     public $js = [
         'js/index.js',
