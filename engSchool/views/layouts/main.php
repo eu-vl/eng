@@ -37,7 +37,7 @@ AppAsset::register($this);
                 <ul class="right hide-on-med-and-down navMenu">
                     <li><a href="<?= Url::to(['home/index'])?>">Home</a></li>
                     <li><a href="<?= Url::to(['teacher/index'])?>">Teachers</a></li>
-                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
                     <li><a href="Contact.html">Contacts</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign up</a></li>
@@ -47,9 +47,9 @@ AppAsset::register($this);
 
     </div>
     <ul id="mobile" class="sidenav">
-        <li><a href="<?= Url::toRoute('home/index')?>">Home</a></li>
-        <li><a href="<?= Url::toRoute('teacher/index')?>">Teachers</a></li>
-        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="<?= Url::to(['home/index'])?>">Home</a></li>
+        <li><a href="<?= Url::to(['teacher/index'])?>">Teachers</a></li>
+        <li><a href="<?= Url::to(['course/index'])?>">Courses</a></li>
         <li><a href="Contacts.html">Contacts</a></li>
         <li><a href="#">Login</a></li>
         <li><a href="#">Sign up</a></li>
