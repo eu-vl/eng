@@ -1,0 +1,216 @@
+ #main-title{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 31px;
+    font-weight: 500;
+    
+  }
+body{
+    background-color: #ecfafc;
+}
+.registration{
+    display:flex;
+    justify-content: space-around;
+}
+
+nav{
+    background-color: #75d4da;
+    box-shadow:none;
+}
+
+.navMenu li:nth-child(5n){
+    margin-left: 800px;
+}
+.navMenu__login{
+    background: #75d4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64.5px;
+    font-family: 'MuseoModerno', cursive;
+    display:flex;
+    justify-content: space-around;
+}
+.navMenu__login a{
+    color: white;
+    padding: 20px 15px;
+    transition: .3s;
+    width: 100%;
+
+}
+.navMenu__login a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+.navMenu__login ul li{
+    display: inline;
+}
+.nav-wrapper{
+    font-family: 'MuseoModerno', cursive;
+}
+.footer-menu{
+    background-color: #75d4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-menu a{
+    color: white;
+    font-family: 'MuseoModerno', cursive;
+    width: fit-content;
+    
+}
+.copyright p{
+    font-family: 'MuseoModerno', cursive;;
+}
+.mainTitle{
+    font-family: 'MuseoModerno', cursive;;
+    color: #75d4da;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgb(48, 48, 48);
+    
+}
+.mainTitle span{
+    position: relative;
+    font-size: 36px;
+}
+.mainTitle span::before{
+    display: block;                  
+    width:250px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 1px solid #75d4da;   
+    top:50%;                         
+    right: 180px;
+}
+.mainTitle span:after {
+    display: block;
+    width:250px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #75d4da;
+    top:50%;
+    left: 180px; 
+}
+
+.about-us-desc {
+    display: flex;
+    justify-content: space-around;
+}
+.about-us-desc p{
+    text-align: center;
+}
+.about-us-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us-content{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.our-team-img{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.our-team-desc {
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;;
+
+}
+.our-team-img img{
+    width: 400px;
+}
+.our-team-cards{
+    border-radius: 30px;
+    position: relative;
+}
+.our-team-btn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 70px;
+}
+.our-team-btn a{
+    margin-bottom: 10px;
+}
+#slider-btn-text{
+    font-family: 'MuseoModerno', cursive;;
+
+}
+.courses-slider h2,p{
+    font-family: 'MuseoModerno', cursive;;
+
+}
+.courses__title{
+    text-align: center;
+    color:#75d4da;
+    text-shadow: 1px 1px 2px rgb(48, 48, 48);
+}
+.course__card{
+    position: relative;
+}
+.cours__btnAdd{
+    position: absolute;
+    z-index: 2;
+    left: 86%;
+    top: 10px;
+}
+.cours__btnDescr{
+    margin-top: 20px;
+}
+.teachers-card{
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.teacher-btn{
+    border-radius: 30px;
+}
+.teacher-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teacher-info h4{
+    font-family: 'MuseoModerno', cursive;;
+
+}
+.teacher-skill-prf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.teacher-skill-prf a{
+    font-family: 'MuseoModerno', cursive;;
+    color: darkcyan;
+}
+.courses__title h2{
+    font-family: 'MuseoModerno', cursive;;
+
+}
+.profile__img{
+    margin-top: 30px;
+}
+.fill{
+    width: 25%;
+    transform: skewX(-35deg);
+    border: none;
+    margin-left: 20px;
+}
+.fill p{
+    transform: skewX(+35deg);
+  }
+.profile__img{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile__content{
+    display:flex;
+    flex-direction: column;
+}
