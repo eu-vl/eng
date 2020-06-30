@@ -9,11 +9,20 @@
 namespace app\controllers;
 
 
+use app\models\OurTeam;
+
 class HomeController extends AppController
 {
     public function actionIndex(){
+         $eugene = OurTeam::find()->where(['id' => 1])->all();
+         $vlad = OurTeam::find()->where(['id' => 2])->all();
+         $andrew = OurTeam::find()->where(['id' => 3])->all();
 
-        return $this->render('index');
+
+
+
+
+        return $this->render('index', compact('eugene','vlad', 'andrew'));
     }
 
 }
